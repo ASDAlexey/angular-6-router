@@ -4,6 +4,12 @@ import { AppComponent } from './app.component';
 import appRoutes from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { RouterModule } from '@angular/router';
+
+const routes = [
+  { path: '', component: HomeComponent },
+  { path: 'contacts', component: ContactsComponent },
+];
 
 @NgModule({
   declarations: [
@@ -12,11 +18,13 @@ import { ContactsComponent } from './contacts/contacts.component';
     ContactsComponent,
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     appRoutes,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule {
 }
