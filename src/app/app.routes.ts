@@ -1,10 +1,8 @@
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ContactsComponent } from './contacts/contacts.component';
 
-const routes = [
-  { path: '', component: HomeComponent },
-  { path: 'contacts', component: ContactsComponent },
+export const routes = [
+  { path: '', loadChildren: './home/home.module#HomeModule' },
+  { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsModule' },
 ];
 
-export default RouterModule.forRoot(routes);
+export const appRoutes = RouterModule.forRoot(routes);
