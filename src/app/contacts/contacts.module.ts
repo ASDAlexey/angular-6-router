@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactsComponent } from './contacts.component';
+import { ContactComponent } from './contact/contact.component';
 import { contactsRoutes } from './contacts.routes';
 
 @NgModule({
@@ -8,7 +9,7 @@ import { contactsRoutes } from './contacts.routes';
     CommonModule,
     contactsRoutes,
   ],
-  declarations: [ContactsComponent]
+  declarations: [ContactsComponent, ContactComponent]
 })
 export class ContactsModule {
 }
