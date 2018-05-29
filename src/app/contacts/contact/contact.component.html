@@ -1,3 +1,4 @@
-<p>
-  contact {{ id | async }}
-</p>
+<div>
+  <h2>{{ (user$ | async).name }}</h2>
+  <p>{{ (user$ | async).website }}</p>
+</div>

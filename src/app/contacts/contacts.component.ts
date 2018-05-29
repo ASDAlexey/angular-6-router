@@ -7,10 +7,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent {
-  todos$;
+  users$;
 
   constructor(private http: HttpClient) {
-    this.todos$ = http.get('http://jsonplaceholder.typicode.com/todos');
+    this.users$ = http.get('http://jsonplaceholder.typicode.com/users');
   }
 
   trackById(index, item) {
