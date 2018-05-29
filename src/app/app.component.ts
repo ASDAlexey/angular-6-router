@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  navs = [
+    { url: '', content: 'Home' },
+    { url: 'contacts', content: 'Contacts' },
+    { url: 'contacts/1', content: 'Contact one' },
+  ];
 }
