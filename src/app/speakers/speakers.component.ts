@@ -13,6 +13,8 @@ export class SpeakersComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     this.params$ = combineLatest([...map(route.children, 'params')], (...params) => (Object.assign({}, ...params)));
+
+    console.log('Parent', this.route.snapshot.queryParams);
   }
 
   ngOnInit() {

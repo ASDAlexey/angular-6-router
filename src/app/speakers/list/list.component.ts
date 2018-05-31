@@ -13,6 +13,7 @@ export class ListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     this.params$ = this.route.params;
+    console.log('List', this.route.snapshot.queryParams);
   }
 
   ngOnInit() {

@@ -13,6 +13,7 @@ export class ItemComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     this.params$ = this.route.params;
+    console.log('Item', this.route.snapshot.queryParams);
   }
 
   ngOnInit() {

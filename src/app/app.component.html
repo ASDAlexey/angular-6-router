@@ -6,6 +6,7 @@
     [routerLinkActiveOptions]="{exact:true}"
   >{{ nav.content }}</a>
   <a
-    [routerLink]="['/speakers', {outlets: {'list': ['list',{data: '111'}], 'item': ['345',{meta: '222'}]}}]">Speakers</a>
+    [routerLink]="['/speakers', {outlets: {'list': ['list',{data: '111'}], 'item': ['345',{meta: '222'}]}}]"
+    [queryParams]="{q:'asdf'}">Speakers</a>
 </nav>
 <router-outlet></router-outlet>
