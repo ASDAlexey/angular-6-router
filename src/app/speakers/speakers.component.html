@@ -1,0 +1,13 @@
+<p>
+  speakers works!
+  {{ params$ | async | json }}
+</p>
+
+<ul class="list">
+  <li class="list__item">
+    <router-outlet name="list"></router-outlet>
+  </li>
+  <li class="list__item">
+    <router-outlet name="item"></router-outlet>
+  </li>
+</ul>

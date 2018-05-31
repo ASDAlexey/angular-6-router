@@ -1,0 +1,10 @@
+.list {
+  font-size: 0;
+
+  &__item {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+  }
+}
